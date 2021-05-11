@@ -9,7 +9,8 @@ the AWS IAM Account Alias
   - [Contributing](#contributing)
   - [Code of Conduct](#code-of-conduct)
   - [Changes](#changes)
-    - [Usage](#usage)
+  - [Usage](#usage)
+  - [Architecture](#architecture)
   - [Author](#author)
 ## Badges
 
@@ -48,7 +49,7 @@ This function is idempotent so can be re-run with the same input.
 
 - [Change Log](CHANGELOG.md)
 
-### Usage
+## Usage
 ```ts
 ...
 
@@ -58,6 +59,11 @@ new P6Namer(this, 'AccountAlias', {
   accountAlias: 'THE-ALIAS',
 });
 ```
+
+## Architecture
+
+![./assets/diagram.png](./assets/diagram.png)
+
 ## Author
 
 Philip M. Gollucci <pgollucci@p6m7g8.com>
