@@ -23,14 +23,13 @@ the AWS IAM Account Alias
 [![Known Vulnerabilities](https://snyk.io/test/github/p6m7g8/p6-namer/badge.svg?targetFile=package.json)](https://snyk.io/test/github/p6m7g8/p6-namer?targetFile=package.json)
 [![Gihub repo dependents](https://badgen.net/github/dependents-repo/p6m7g8/p6-namer)](https://github.com/p6m7g8/p6-namer/network/dependents?dependent_type=REPOSITORY)
 [![Gihub package dependents](https://badgen.net/github/dependents-pkg/p6m7g8/p6-namer)](https://github.com/p6m7g8/p6-namer/network/dependents?dependent_type=PACKAGE)
-[![NPM Downloads](https://img.shields.io/npm/dw/p6-namer)](https://img.shields.io/npm/dw/p6-namer)
 
 ## Distributions
 
-[![npm version](https://badge.fury.io/js/p6-namer.svg)](https://badge.fury.io/js/p6-namer)
-[![PyPI version](https://badge.fury.io/py/p6-namer.svg)](https://badge.fury.io/py/p6-namer)
-[![NuGet version](https://badge.fury.io/nu/P6m7g8.P6Namer.svg)](https://badge.fury.io/nu/P6m7g8.P6Namer)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.p6m7g8/p6-namer/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.p6m7g8/p6-namer)
+[![npm version](https://badge.fury.io/js/p6-namer.svg)](https://badge.fury.io/js/p6-namer) [![NPM Downloads](https://img.shields.io/npm/dw/p6-namer)](https://img.shields.io/npm/dw/p6-namer)
+[![PyPI version](https://badge.fury.io/py/p6-namer.svg)](https://badge.fury.io/py/p6-namer) [![PyPI Downloads](https://img.shields.io/pypi/dw/p6-namer)](https://img.shields.io/pypi/p6-namer)
+[![NuGet version](https://badge.fury.io/nu/P6m7g8.P6Namer.svg)](https://badge.fury.io/nu/P6m7g8.P6Namer) [![NuGet Downloads](https://img.shields.io/nuget/dt/P6m7g8.P6Namer.svg)](https://www.nuget.org/packages/P6m7g8.P6Namer/)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.p6m7g8/p6-namer/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.p6m7g8/p6-namer) [![Maven Downloads](https://jitpack.io/v/com.github.p6m7g8/p6-namer/week.svg)](https://jitpack.io/#com.github.p6m7g8/p6-namer)
 
 ## Summary
 
