@@ -2,8 +2,10 @@ AWS CDK setups up a Custom Resource via Cloud Formation which sets
 the AWS IAM Account Alias
 
 # P6Namer
+
 - [P6Namer](#p6namer)
-  - [Badges](#badges)
+  - [LICENSE](#license)
+  - [CI/CD](#cicd)
   - [Distributions](#distributions)
   - [Summary](#summary)
   - [Contributing](#contributing)
@@ -12,24 +14,27 @@ the AWS IAM Account Alias
   - [Usage](#usage)
   - [Architecture](#architecture)
   - [Author](#author)
-## Badges
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/p6m7g8/p6-namer)
-![Build](https://github.com/p6m7g8/p6-namer/workflows/Build/badge.svg)
-![Release](https://github.com/p6m7g8/p6-namer/workflows/Release/badge.svg)
-[![Mergify](https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges/p6m7g8/p6-namer/&style=flat)](https://mergify.io)
-[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=p6m7g8_p6-namer&metric=alert_status)](https://sonarcloud.io/dashboard?id=p6m7g8_p6-namer)
-[![Known Vulnerabilities](https://snyk.io/test/github/p6m7g8/p6-namer/badge.svg?targetFile=package.json)](https://snyk.io/test/github/p6m7g8/p6-namer?targetFile=package.json)
-[![Gihub repo dependents](https://badgen.net/github/dependents-repo/p6m7g8/p6-namer)](https://github.com/p6m7g8/p6-namer/network/dependents?dependent_type=REPOSITORY)
-[![Gihub package dependents](https://badgen.net/github/dependents-pkg/p6m7g8/p6-namer)](https://github.com/p6m7g8/p6-namer/network/dependents?dependent_type=PACKAGE)
+## LICENSE
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0) [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/p6m7g8/p6-namer)
+
+## CI/CD
+
+![GitHub Build Workflow Status](https://img.shields.io/github/workflow/status/p6m7g8/p6-namer/Build) ![GitHub Release Workflow Statuss](https://github.com/p6m7g8/p6-namer/workflows/Release/badge.svg)
+![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/p6m7g8/p6-namer) ![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=p6m7g8_p6-namer&metric=alert_status)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/p6m7g8/p6-namer) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/p6m7g8/p6-namer) 
 
 ## Distributions
 
-[![npm version](https://badge.fury.io/js/p6-namer.svg)](https://badge.fury.io/js/p6-namer) [![NPM Downloads](https://img.shields.io/npm/dw/p6-namer)](https://img.shields.io/npm/dw/p6-namer)
-[![PyPI version](https://badge.fury.io/py/p6-namer.svg)](https://badge.fury.io/py/p6-namer) [![PyPI Downloads](https://img.shields.io/pypi/dw/p6-namer)](https://img.shields.io/pypi/p6-namer)
-[![NuGet version](https://badge.fury.io/nu/P6m7g8.P6Namer.svg)](https://badge.fury.io/nu/P6m7g8.P6Namer) [![NuGet Downloads](https://img.shields.io/nuget/dt/P6m7g8.P6Namer.svg)](https://www.nuget.org/packages/P6m7g8.P6Namer/)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.p6m7g8/p6-namer/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.p6m7g8/p6-namer) [![Maven Downloads](https://jitpack.io/v/com.github.p6m7g8/p6-namer/week.svg)](https://jitpack.io/#com.github.p6m7g8/p6-namer)
+| Method | Version | Daily | Weekly | Monthly | Yearly | Total |
+ --------| --------| ------| -------| --------| -------|-------|
+| NPM      | ![npm](https://img.shields.io/npm/v/p6-namer) |       | [![NPM Weekly Downloads](https://img.shields.io/npm/dw/p6-namer)](https://img.shields.io/npm/dw/p6-namer) | [![NPM Monthly Downloads](https://img.shields.io/npm/dm/p6-namer)](https://img.shields.io/npm/dm/p6-namer) | [![NPM Yearly Downloads](https://img.shields.io/npm/dy/p6-namer)](https://img.shields.io/npm/dy/p6-namer) | [![NPM Total Downloads](https://img.shields.io/npm/dt/p6-namer)](https://img.shields.io/npm/dt/p6-namer) |
+| PYPI      | ![PyPI](https://img.shields.io/pypi/v/p6-namer) | ![PyPI - Downloads](https://img.shields.io/pypi/dd/p6-namer) | ![PyPI - Downloads](https://img.shields.io/pypi/dw/p6-namer) | ![PyPI - Downloads](https://img.shields.io/pypi/dm/p6-namer)         |       |        |
+| Nuget      | ![Nuget](https://img.shields.io/nuget/v/P6m7g8.P6Namer) |       |        |         |       | ![NuGet Downloads](https://img.shields.io/nuget/dt/P6m7g8.P6Namer.svg) |
+| Maven Central | ![Maven Central](https://img.shields.io/maven-central/v/com.github.p6m7g8/p6-namer) |       | ![Maven](https://jitpack.io/v/com.github.p6m7g8/p6-namer/week.svg) | ![Maven](https://jitpack.io/v/com.github.p6m7g8/p6-namer/month.svg)         |       |        |
+| GoLang     |         |       |        |         |       |        |
+| Kotlin     |         |       |        |         |       |        |
 
 ## Summary
 
