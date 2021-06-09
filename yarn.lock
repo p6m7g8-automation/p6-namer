@@ -1516,10 +1516,10 @@ aws-sdk@*:
     uuid "3.3.2"
     xml2js "0.4.19"
 
-aws-sdk@^2.923.0:
-  version "2.923.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.923.0.tgz#97a95686e9dba10f628092bfd90f84397c8ad55f"
-  integrity sha512-93YK9Mx32qvH5eLrDRVkvwpEc7GJ6mces1qQugmNZCuQT68baILyDs0IMRtHS6NYxxiM6XNRFc7ubgMlnafYjg==
+aws-sdk@^2.924.0:
+  version "2.924.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.924.0.tgz#daefcd11729638d9c9279633a0cc5ba1c98fee64"
+  integrity sha512-EwJmZDNhEY1/hrihile8+EdrYrT5VKcLuL5F+OA9L+AYWxNou0i4fP36N5KFtMikkAGB31qhAuRDPcr132RnUw==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -4670,10 +4670,10 @@ jsii-diff@^1.30.0:
     typescript "~3.9.9"
     yargs "^16.2.0"
 
-jsii-docgen@^1.8.89:
-  version "1.8.89"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-1.8.89.tgz#81f71da20161e293ef9d08de2b6a8153cbf12584"
-  integrity sha512-gb6N86ePVwGlQqZjkOzR70z0QpTh51P6/+gPGlRva5ndVIO5CzRv7qAFQhHcBgv7dTkH34qu8ncIUkMxMXCzpw==
+jsii-docgen@^1.8.90:
+  version "1.8.90"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-1.8.90.tgz#cabafb6040c7376fcbdb2e6c8a4ce889b21ca3a3"
+  integrity sha512-qf+ebOa5p78onOokgf5SlEzNi1HnqXSlVGJTeI1w16FQPHKBgDVuTiFaxTVv1Wg4H0PUIvg20SEcRvGPqJLnag==
   dependencies:
     "@jsii/spec" "^1.30.0"
     fs-extra "^9.1.0"
