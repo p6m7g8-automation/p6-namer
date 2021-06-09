@@ -11,8 +11,7 @@
 /.gitpod.yml                               	linguist-generated
 /.mergify.yml                              	linguist-generated
 /.npmignore                                	linguist-generated
-/.projen/                                  	linguist-generated
-/.versionrc.json                           	linguist-generated
+/.projen/**                                	linguist-generated
 /LICENSE                                   	linguist-generated
 /package.json                              	linguist-generated
 /tsconfig.eslint.json                      	linguist-generated
