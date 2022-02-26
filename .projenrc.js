@@ -22,7 +22,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
   peerDeps: [
     'aws-cdk-lib',
     'constructs',
-    'cdk-iam-floyd',
   ],
 
   devDeps: [
