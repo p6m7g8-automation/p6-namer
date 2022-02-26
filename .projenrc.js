@@ -16,7 +16,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
     'landing zone',
   ],
 
-  minNodeVersion: '14.15.0',
   gitpod: true,
   devenv: true,
 
