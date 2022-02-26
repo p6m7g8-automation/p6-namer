@@ -1,5 +1,5 @@
-import { expect as expectCDK, haveResource } from '@aws-cdk/assert';
-import * as cdk from '@aws-cdk/core';
+import * as cdk from 'aws-cdk-lib';
+import { Template } from 'aws-cdk-lib/assertions';
 
 import { P6Namer } from '../src';
 
@@ -14,8 +14,12 @@ test('P6Namer components', () => {
   });
 
   // THEN
-  expectCDK(stack).to(
-    haveResource('AWS::Lambda::Function'),
-  );
+  const template = Template.fromStack(stack);
+  template.hasResourceProperties('AWS::Lambda::Function', {
+    Handler: 'index.handler',
+    Runtime: 'nodejs12.x',
+  });
+  template.resourceCountIs('AWS::Lambda::Function', 2); // Custom Resource Handler counts too
+
 });
 

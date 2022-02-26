@@ -1,17 +1,18 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import * as lambda from '@aws-cdk/aws-lambda';
-import * as lambdajs from '@aws-cdk/aws-lambda-nodejs';
-import * as cdk from '@aws-cdk/core';
-import * as cr from '@aws-cdk/custom-resources';
+import * as cdk from 'aws-cdk-lib';
+import * as lambda from 'aws-cdk-lib/aws-lambda';
+import * as lambdajs from 'aws-cdk-lib/aws-lambda-nodejs';
+import * as cr from 'aws-cdk-lib/custom-resources';
 import * as floyd from 'cdk-iam-floyd';
+import { Construct } from 'constructs';
 
 export interface IP6NamerProps {
   accountAlias: string;
 }
 
 export class P6Namer extends cdk.Resource {
-  constructor(scope: cdk.Construct, id: string, props: IP6NamerProps) {
+  constructor(scope: Construct, id: string, props: IP6NamerProps) {
     super(scope, id);
 
     const policy = new floyd.Iam()

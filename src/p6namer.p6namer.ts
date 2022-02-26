@@ -12,7 +12,7 @@ function p6_namer_iam_account_alias(alias: string): void {
     AccountAlias: alias,
   };
 
-  iam.createAccountAlias(params, function(err, data) {
+  iam.createAccountAlias(params, function (err, data) {
     if (err) {
       console.log(err, err.stack);
     } else {

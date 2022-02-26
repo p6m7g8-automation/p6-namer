@@ -1,11 +1,11 @@
-const { AwsCdkConstructLibrary } = require('projen');
-
-const project = new AwsCdkConstructLibrary({
+const { awscdk } = require('projen');
+const project = new awscdk.AwsCdkConstructLibrary({
+  author: 'Philip M. Gollucci',
   authorAddress: 'pgollucci@p6m7g8.com',
-  authorName: 'Philip M. Gollucci',
-  cdkVersion: '1.104.0',
+  cdkVersion: '2.1.0',
+  defaultReleaseBranch: 'main',
   name: 'p6-namer',
-  repository: 'https://github.com/p6m7g8/p6-namer.git',
+  repositoryUrl: 'https://github.com/p6m7g8/p6-namer.git',
   description: 'Sets the AWS IAM Account Alias with a Custom Resource',
   keywords: [
     'aws',
@@ -17,32 +17,29 @@ const project = new AwsCdkConstructLibrary({
   ],
 
   minNodeVersion: '14.0.0',
-  defaultReleaseBranch: 'main',
-  projenUpgradeSecret: 'PROJEN_GITHUB_TOKEN',
   gitpod: true,
   devenv: true,
 
-  cdkDependencies: [
-    '@aws-cdk/core',
-    '@aws-cdk/custom-resources',
-    '@aws-cdk/aws-lambda',
-    '@aws-cdk/aws-lambda-nodejs',
+  peerDeps: [
+    'aws-cdk-lib',
+    'constructs',
+    'cdk-iam-floyd',
   ],
 
   devDeps: [
-    '@types/aws-lambda',
-    'typedoc@^0.20.35',
-    'esbuild@^0',
+    'cdk-iam-floyd',
+    'esbuild',
+    'typedoc',
   ],
 
   deps: [
-    'aws-lambda',
+    '@types/aws-lambda',
     'aws-sdk',
     'cdk-iam-floyd',
   ],
 
   bundledDeps: [
-    'aws-lambda',
+    '@types/aws-lambda',
     'aws-sdk',
     'cdk-iam-floyd',
   ],
@@ -62,50 +59,6 @@ const project = new AwsCdkConstructLibrary({
     dotNetNamespace: 'P6m7g8.P6Namer',
     packageId: 'P6m7g8.P6Namer',
   },
-});
-
-project.gitignore.exclude('.node-version');
-
-project.github.mergify.addRule({
-  name: 'Label core contributions',
-  actions: {
-    label: {
-      add: ['contribution/core'],
-    },
-  },
-  conditions: [
-    'author~=^(pgollucci)$',
-    'label!=contribution/core',
-  ],
-});
-
-project.github.mergify.addRule({
-  name: 'Label auto-merge for core',
-  actions: {
-    label: {
-      add: ['auto-merge'],
-    },
-  },
-  conditions: [
-    'label=contribution/core',
-    'label!=auto-merge',
-  ],
-});
-
-project.github.mergify.addRule({
-  name: 'Label auto-merge snyk-bot',
-  actions: {
-    merge: {
-      method: 'squash',
-      commit_message: 'title+body',
-      strict: 'smart',
-      strict_method: 'merge',
-    },
-  },
-  conditions: [
-    'author=snyk-bot',
-    'status-success=build',
-  ],
 });
 
 project.gitpod.addTasks({
