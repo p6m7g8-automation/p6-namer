@@ -2,7 +2,7 @@ const { awscdk } = require('projen');
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Philip M. Gollucci',
   authorAddress: 'pgollucci@p6m7g8.com',
-  cdkVersion: '2.1.0',
+  cdkVersion: '2.15.0',
   defaultReleaseBranch: 'main',
   name: 'p6-namer',
   repositoryUrl: 'https://github.com/p6m7g8/p6-namer.git',
