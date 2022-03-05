@@ -1,4 +1,4 @@
-const { awscdk } = require('projen');
+import { awscdk } from "projen";
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Philip M. Gollucci',
   authorAddress: 'pgollucci@p6m7g8.com',
@@ -16,8 +16,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
     'landing zone',
   ],
 
+  projenrcTs: true,
   gitpod: true,
-  devenv: true,
 
   peerDeps: [
     'aws-cdk-lib',
@@ -61,12 +61,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
   publishToGo: {
     moduleName: 'github.com/p6m7g8/p6-namer',
   },
-});
-
-project.gitpod.addTasks({
-  name: 'Setup',
-  init: 'yarn install',
-  command: 'npx projen build',
 });
 
 project.synth();
