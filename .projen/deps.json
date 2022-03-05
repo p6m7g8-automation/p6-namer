@@ -98,6 +98,11 @@
       "type": "build"
     },
     {
+      "name": "ts-node",
+      "version": "^9",
+      "type": "build"
+    },
+    {
       "name": "typedoc",
       "type": "build"
     },
