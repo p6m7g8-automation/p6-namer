@@ -18,7 +18,7 @@ export class P6Namer extends cdk.Resource {
       .toCreateAccountAlias();
 
     const onEvent = new lambdajs.NodejsFunction(this, 'p6namer', {
-      runtime: lambda.Runtime.NODEJS_12_X,
+      runtime: lambda.Runtime.NODEJS_14_X,
       timeout: cdk.Duration.seconds(2),
       tracing: lambda.Tracing.ACTIVE,
       bundling: {
