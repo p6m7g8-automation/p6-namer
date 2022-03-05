@@ -57,6 +57,10 @@ const project = new awscdk.AwsCdkConstructLibrary({
     dotNetNamespace: 'P6m7g8.P6Namer',
     packageId: 'P6m7g8.P6Namer',
   },
+
+  publishToGo: {
+    moduleName: 'github.com/p6m7g8/p6-namer',
+  },
 });
 
 project.gitpod.addTasks({
