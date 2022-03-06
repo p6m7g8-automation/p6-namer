@@ -38,7 +38,7 @@
   "author": {
     "name": "Philip M. Gollucci",
     "email": "pgollucci@p6m7g8.com",
-    "organization": false
+    "organization": true
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",
@@ -50,9 +50,11 @@
     "constructs": "10.0.5",
     "esbuild": "^0.14.25",
     "eslint": "^8",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
     "jest": "^27.5.1",
     "jest-junit": "^13",
     "jsii": "^1.54.0",
@@ -60,6 +62,7 @@
     "jsii-docgen": "^6.1.21",
     "json-schema": "^0.4.0",
     "npm-check-updates": "^12",
+    "prettier": "^2.5.1",
     "projen": "^0.52.49",
     "standard-version": "^9",
     "ts-jest": "^27.1.3",
