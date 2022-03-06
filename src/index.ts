@@ -1,1 +1,1 @@
-export * from './p6namer';
+export * from "./p6namer";
