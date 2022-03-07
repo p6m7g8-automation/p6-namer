@@ -13,7 +13,7 @@ import (
 	constructs "github.com/aws/constructs-go/constructs/v10/jsii"
 )
 
-//go:embed p6-namer-0.7.179.tgz
+//go:embed p6-namer-0.7.180.tgz
 var tarball []byte
 
 // Initialize loads the necessary packages in the @jsii/kernel to support the enclosing module.
@@ -24,5 +24,5 @@ func Initialize() {
 	constructs.Initialize()
 
 	// Load this library into the kernel
-	_jsii_.Load("p6-namer", "0.7.179", tarball)
+	_jsii_.Load("p6-namer", "0.7.180", tarball)
 }
