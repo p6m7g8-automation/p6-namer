@@ -57,9 +57,9 @@
     "eslint-plugin-prettier": "^4.0.0",
     "jest": "^27.5.1",
     "jest-junit": "^13",
-    "jsii": "^1.54.0",
-    "jsii-diff": "^1.54.0",
-    "jsii-docgen": "^6.1.27",
+    "jsii": "^1.55.0",
+    "jsii-diff": "^1.55.0",
+    "jsii-docgen": "^6.1.29",
     "json-schema": "^0.4.0",
     "npm-check-updates": "^12",
     "prettier": "^2.5.1",
@@ -76,7 +76,7 @@
   },
   "dependencies": {
     "@types/aws-lambda": "^8.10.93",
-    "aws-sdk": "^2.1090.0",
+    "aws-sdk": "^2.1092.0",
     "cdk-iam-floyd": "^0.333.0"
   },
   "bundledDependencies": [
